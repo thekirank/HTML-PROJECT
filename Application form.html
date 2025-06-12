@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="kurubakiran1809@gmail.com">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+<center><h1>Job Application Form</h1></center>
+
+<form action="" >
+    <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+            <tr>
+                <td><label for="first_name">First Name*</label></td>
+                <td><input type="text" id="first_name" name="first_name" placeholder="ex: kiran" required></td>
+            </tr>
+            <tr>
+                <td><label for="last_name">Last Name*</label></td>
+                <td><input type="text" id="last_name" name="last_name" placeholder="ex: kumar" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td><input type="radio" id="male" name="gender" value="Male">Male<input type="radio" id="female" name="gender" value="Female">Female<input type="radio" id="other" name="gender" value="Other">Others</td>
+            </tr>
+            <tr>
+                <td><label for="profile_picture">Profile Picture*</label></td>
+                <td><input type="file" id="profile_picture" name="profile_picture" required></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Information</legend>
+        <table>
+            <tr>
+                <td><label for="email">Email*</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone_number">Phone Number*</label></td>
+                <td><input type="text" id="phone_number" name="phone_number" pattern="\d{10}" placeholder="ex: 9703357014" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><textarea id="address" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="America">America</option>
+            <option value="England">England</option>
+            <option value="Other">Other</option>
+        </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Job Preferences</legend>
+        <table>
+            <tr>
+                <td><label for="position">Position Applied For</label></td>
+                <td><input type="text" id="position" name="position"></td>
+            </tr>
+            <tr>
+                <td><label for="experience">Years of Experience</label></td>
+                <td><input type="number" id="experience" name="experience" min="0" max=""></td>
+            </tr>
+        </table>
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Account Creation</legend>
+        <table>
+            <tr>
+                <td><label for="username">Username*</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password*</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirm_password">Confirm Password*</label></td>
+                <td><input type="confirm_password" id="confirm_password" name="confirm_password" required></td>
+            </tr>
+            <tr>
+                <td><label for="preferred_location">Preferred Locations</label></td>   
+                <td>
+                    <input type="checkbox" name="preferred_location" value="B"> Bangalore
+                    <input type="checkbox" name="preferred_location" value="H"> Hyderabad
+                    <input type="checkbox" name="preferred_location" value="C"> Chennai
+                    <input type="checkbox" name="preferred_location" value="M"> Mumbai
+                </td>
+            </tr>
+           
+        </table>
+        <table>
+            <TR>
+                <td><label for="relocate">Are you willing to Relocate</label></td>
+                <td><input type="checkbox" name="relocate" value="yes"> YES </td>
+            </TR>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Education Background</legend>
+        <table>
+            <tr>
+                <td><label for="qualification">Highest Qualification:</label></td>
+                <td>
+                    <select id="qualification" name="qualification">
+                        <option value="graduate">Graduate</option>
+                        <option value="postgraduate">Postgraduate</option>
+                        <option value="phd">Ph.D</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="specialization">Specialization:</label></td>
+                <td><input type="text" id="specialization" name="specialization"></td>
+            </tr>
+            <tr>
+                <td><label for="graduation_year">Year of Graduation:</label></td>
+                <td><input type="text" id="graduation_year" name="graduation_year"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Resume Upload</legend>
+        <table>
+            <tr>
+                <td><label for="resume">Upload Resume (PDF/DOC)</label></td>
+                <td><input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Agreement</legend>
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the terms and conditions <a href="">terms & conditions</a></label>
+        <table>
+            <tr>
+                <td><input type="submit" value="Submit Application" onclick="alert('Application Submitted Successfully')"></td>
+                <td><input type="reset" value="Reset Form"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    
+</form>
+
+</body>
+</html>
